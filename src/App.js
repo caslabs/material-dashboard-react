@@ -53,8 +53,8 @@ import { useMaterialUIController, setMiniSidenav, setOpenConfigurator } from "co
 import brandWhite from "assets/images/logo-ct.png";
 import brandDark from "assets/images/logo-ct-dark.png";
 
-//hotjar
-import { hotjar } from 'react-hotjar'
+// Hotjar integration
+import { hotjar } from "react-hotjar";
 
 export default function App() {
   const [controller, dispatch] = useMaterialUIController();
@@ -105,8 +105,6 @@ export default function App() {
   useEffect(() => {
     document.body.setAttribute("dir", direction);
   }, [direction]);
-  
-  
 
   // Setting page scroll to 0 when changing the route
   useEffect(() => {
@@ -114,10 +112,10 @@ export default function App() {
     document.scrollingElement.scrollTop = 0;
   }, [pathname]);
 
-  //Hotjar tracking code
+  // Hotjar tracking code
   useEffect(() => {
-    hotjar.initialize(2833340, 6)
-  }, [])
+    hotjar.initialize(2833340, 6);
+  }, []);
 
   const getRoutes = (allRoutes) =>
     allRoutes.map((route) => {
