@@ -55,7 +55,7 @@ const routes = [
   },
   {
     type: "collapse",
-    name: "Train",
+    name: "Database",
     key: "tables",
     icon: <Icon fontSize="small">table_view</Icon>,
     route: "/tables",
@@ -79,7 +79,7 @@ const routes = [
   },
   {
     type: "collapse",
-    name: "Database",
+    name: "Profile",
     key: "profile",
     icon: <Icon fontSize="small">person</Icon>,
     route: "/profile",
