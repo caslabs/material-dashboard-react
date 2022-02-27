@@ -99,7 +99,7 @@ function Footer({ company, links }) {
 
 // Setting default values for the props of Footer
 Footer.defaultProps = {
-  company: { href: "https://www.creative-tim.com/", name: "Makai" },
+  company: { href: "https://hackfortheocean-casourcer.vercel.app", name: "Makai" },
   links: [
     { href: "https://hackfortheocean-casourcer.vercel.app/", name: "Makai" },
     { href: "https://hackfortheocean-casourcer.vercel.app/", name: "About Us" },
