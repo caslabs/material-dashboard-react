@@ -40,11 +40,20 @@ import Dashboard from "layouts/dashboard";
 import Tables from "layouts/tables";
 import Notifications from "layouts/notifications";
 import Profile from "layouts/profile";
+import CameraMonitor from "layouts/camera-monitor";
 
 // @mui icons
 import Icon from "@mui/material/Icon";
 
 const routes = [
+  {
+    type: "collapse",
+    name: "Camera Preview",
+    key: "camera-monitor",
+    icon: <Icon fontSize="small">camera</Icon>,
+    route: "/camera-monitor",
+    component: <CameraMonitor />,
+  },
   {
     type: "collapse",
     name: "Monitor",
