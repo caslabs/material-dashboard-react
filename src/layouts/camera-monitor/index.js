@@ -72,6 +72,40 @@ function CameraMonitor() {
                 />
               </MDBox>
             </Grid>
+            <Grid item xs={12} md={6} lg={4}>
+              <MDBox mb={3}>
+              <ReportsBarChart
+                  color="info"
+                  title="Device 4"
+                  description="Latest Preview"
+                  date="Insight discovered 2 days ago"
+                  chart={reportsBarChartData}
+                />
+              </MDBox>
+            </Grid>
+            <Grid item xs={12} md={6} lg={4}>
+              <MDBox mb={3}>
+              <ReportsBarChart
+                  color="info"
+                  title="Device 5"
+                  description="Latest Preview"
+                  date="Insight discovered 2 days ago"
+                  chart={reportsBarChartData}
+                />
+              </MDBox>
+            </Grid>
+            <Grid item xs={12} md={6} lg={4}>
+              <MDBox mb={3}>
+              <ReportsBarChart
+                  color="info"
+                  title="Device 6"
+                  description="Latest Preview"
+                  date="Insight discovered 2 days ago"
+                  chart={reportsBarChartData}
+                />
+              </MDBox>
+            </Grid>
+            
           </Grid>
         </MDBox>
       </MDBox>
