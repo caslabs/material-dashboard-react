@@ -41,6 +41,7 @@ import Tables from "layouts/tables";
 import Notifications from "layouts/notifications";
 import Profile from "layouts/profile";
 import CameraMonitor from "layouts/camera-monitor";
+import Devices from "layouts/devices";
 
 // @mui icons
 import Icon from "@mui/material/Icon";
@@ -83,8 +84,8 @@ const routes = [
     name: "Devices",
     key: "memory",
     icon: <Icon fontSize="small">memory</Icon>,
-    route: "/notifications",
-    component: <Notifications />,
+    route: "/devices",
+    component: <Devices />,
   },
   {
     type: "collapse",
