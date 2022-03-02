@@ -53,7 +53,7 @@ function CameraMonitor() {
             <Grid item xs={12} md={6} lg={4}>
               <MDBox mb={3}>
               <iframe
-    src="https://player.twitch.tv/?channel=xqcow&muted=true&parent=streamernews.example.com"
+    src="https://player.twitch.tv/?channel=xqcow&muted=true&parent=ai-system-h40-casourcer.vercel.app"
     height="300"
     width="300"
     allowfullscreen="true">
