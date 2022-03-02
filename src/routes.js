@@ -68,7 +68,7 @@ const routes = [
     name: "Database",
     key: "database",
     icon: <Icon fontSize="small">table_view</Icon>,
-    route: "/tables",
+    route: "/database",
     component: <Tables />,
   },
   {
@@ -76,7 +76,7 @@ const routes = [
     name: "Notifications",
     key: "notification",
     icon: <Icon fontSize="small">notifications</Icon>,
-    route: "/notifications",
+    route: "/notification",
     component: <Notifications />,
   },
   {
