@@ -23,7 +23,7 @@ import MDBox from "components/MDBox";
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 import Footer from "examples/Footer";
-import ReportsBarChart from "examples/Charts/BarCharts/ReportsBarChart";
+import StreamChart from "examples/Charts/BarCharts/StreamChart";
 import ReportsLineChart from "examples/Charts/LineCharts/ReportsLineChart";
 import ComplexStatisticsCard from "examples/Cards/StatisticsCards/ComplexStatisticsCard";
 
@@ -41,70 +41,48 @@ function CameraMonitor() {
           <Grid container spacing={3}>
             <Grid item xs={12} md={6} lg={4}>
               <MDBox mb={3}>
-                <ReportsBarChart
+                <StreamChart
                   color="info"
                   title="Device 1 "
                   description="Latest Preview"
                   date="Insight discovered 2 days ago"
-                  chart={reportsBarChartData}
+                  stream="https://player.twitch.tv/?channel=shrimps247&muted=true&parent=ai-system-h40-casourcer.vercel.app"
                 />
               </MDBox>
             </Grid>
             <Grid item xs={12} md={6} lg={4}>
               <MDBox mb={3}>
-              <iframe
-    src="https://player.twitch.tv/?channel=xqcow&muted=true&parent=ai-system-h40-casourcer.vercel.app"
-    height="300"
-    width="300"
-    allowfullscreen="true">
-</iframe>
-              </MDBox>
-            </Grid>
-            <Grid item xs={12} md={6} lg={4}>
-              <MDBox mb={3}>
-              <ReportsBarChart
+                <StreamChart
                   color="info"
-                  title="Device 3"
+                  title="Device 2 "
                   description="Latest Preview"
                   date="Insight discovered 2 days ago"
-                  chart={reportsBarChartData}
+                  stream="https://player.twitch.tv/?channel=shrimps247&muted=true&parent=ai-system-h40-casourcer.vercel.app"
                 />
               </MDBox>
             </Grid>
             <Grid item xs={12} md={6} lg={4}>
               <MDBox mb={3}>
-              <ReportsBarChart
+                <StreamChart
                   color="info"
-                  title="Device 4"
+                  title="Device 3 "
                   description="Latest Preview"
                   date="Insight discovered 2 days ago"
-                  chart={reportsBarChartData}
+                  stream="https://player.twitch.tv/?channel=shrimps247&muted=true&parent=ai-system-h40-casourcer.vercel.app"
                 />
               </MDBox>
             </Grid>
             <Grid item xs={12} md={6} lg={4}>
               <MDBox mb={3}>
-              <ReportsBarChart
+                <StreamChart
                   color="info"
-                  title="Device 5"
+                  title="Device 4 "
                   description="Latest Preview"
                   date="Insight discovered 2 days ago"
-                  chart={reportsBarChartData}
+                  stream="https://player.twitch.tv/?channel=shrimps247&muted=true&parent=ai-system-h40-casourcer.vercel.app"
                 />
               </MDBox>
             </Grid>
-            <Grid item xs={12} md={6} lg={4}>
-              <MDBox mb={3}>
-              <ReportsBarChart
-                  color="info"
-                  title="Device 6"
-                  description="Latest Preview"
-                  date="Insight discovered 2 days ago"
-                  chart={reportsBarChartData}
-                />
-              </MDBox>
-            </Grid>
-            
           </Grid>
         </MDBox>
       </MDBox>
