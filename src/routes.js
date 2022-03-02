@@ -38,10 +38,9 @@ Coded by www.creative-tim.com
 // Material Dashboard 2 React layouts
 import Dashboard from "layouts/dashboard";
 import Tables from "layouts/tables";
-import Notifications from "layouts/notifications";
-import Profile from "layouts/profile";
 import CameraMonitor from "layouts/camera-monitor";
 import Devices from "layouts/devices";
+import DataAnnotation from "layouts/data-annotation";
 
 // @mui icons
 import Icon from "@mui/material/Icon";
@@ -58,10 +57,10 @@ const routes = [
   {
     type: "collapse",
     name: "Data Annontation",
-    key: "data-annontation",
+    key: "annontation",
     icon: <Icon fontSize="small">image_search</Icon>,
-    route: "/data-annotation",
-    component: <CameraMonitor />,
+    route: "/annontation",
+    component: <DataAnnotation />,
   },
   {
     type: "collapse",
