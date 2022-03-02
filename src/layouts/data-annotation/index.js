@@ -31,8 +31,25 @@ import ComplexStatisticsCard from "examples/Cards/StatisticsCards/ComplexStatist
 import reportsBarChartData from "layouts/dashboard/data/reportsBarChartData";
 import reportsLineChartData from "layouts/dashboard/data/reportsLineChartData";
 
+//Experiment - Image Preview
+import React, { useState, useEffect } from 'react'
+
 function DataAnnotation() {
   const { sales, tasks } = reportsLineChartData;
+  const [images, setImages] = useState([]);
+  const [imageURLs, setImageURLS] = useState([]);
+
+  useEffect(() => {
+    if (images.length < 1) return;
+    const newImageURLs = [];
+    images.forEach(image => newImageURLs.push(URL.createObjectURL(image)));
+    setImageURLS(newImageURLs)
+  }, [images])
+
+  function onImageChange(e) {
+    setImages([...e.target.files]);
+  }
+
   return (
     <DashboardLayout>
       <DashboardNavbar />
@@ -41,7 +58,8 @@ function DataAnnotation() {
           <Grid container spacing={3}>
             <Grid item xs={12} md={6} lg={4}>
               <MDBox mb={3}>
-                <p>some image</p>
+                <input type="file" multiple accept="image/*" onChange={onImageChange} />
+                { imageURLs.map(imageSrc => <img width="300px" src={imageSrc} /> )}
               </MDBox>
             </Grid>
           </Grid>
