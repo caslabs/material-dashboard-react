@@ -66,7 +66,7 @@ const routes = [
   {
     type: "collapse",
     name: "Database",
-    key: "tables",
+    key: "database",
     icon: <Icon fontSize="small">table_view</Icon>,
     route: "/tables",
     component: <Tables />,
@@ -74,7 +74,7 @@ const routes = [
   {
     type: "collapse",
     name: "Notifications",
-    key: "tables",
+    key: "notification",
     icon: <Icon fontSize="small">notifications</Icon>,
     route: "/notifications",
     component: <Notifications />,
@@ -82,7 +82,7 @@ const routes = [
   {
     type: "collapse",
     name: "Devices",
-    key: "memory",
+    key: "devices",
     icon: <Icon fontSize="small">memory</Icon>,
     route: "/devices",
     component: <Devices />,

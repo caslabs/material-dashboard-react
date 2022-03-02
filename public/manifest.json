@@ -3,7 +3,7 @@
   "name": "Intelligent Data Service",
   "icons": [
     {
-      "src": "favicon.png",
+      "src": "favicon-16x16.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/png"
     }

@@ -182,7 +182,20 @@ function Sidenav({ color, brand, brandName, routes, ...rest }) {
       <MDBox p={2} mt="auto">
         <MDButton
           component="a"
-          href="https://hackfortheocean-casourcer.vercel.app/"
+          href="https://hackfortheocean-casourcer.vercel.app/sign-up/"
+          target="_blank"
+          rel="noreferrer"
+          variant="gradient"
+          color={sidenavColor}
+          fullWidth
+        >
+          Add New Tab
+        </MDButton>
+      </MDBox>
+      <MDBox p={2} mt="auto">
+        <MDButton
+          component="a"
+          href="https://hackfortheocean-casourcer.vercel.app/sign-up/"
           target="_blank"
           rel="noreferrer"
           variant="gradient"
@@ -192,6 +205,7 @@ function Sidenav({ color, brand, brandName, routes, ...rest }) {
           upgrade to pro
         </MDButton>
       </MDBox>
+      
     </SidenavRoot>
   );
 }
