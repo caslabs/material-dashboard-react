@@ -49,7 +49,7 @@ import Icon from "@mui/material/Icon";
 const routes = [
   {
     type: "collapse",
-    name: "Camera Preview",
+    name: "Devices Preview",
     key: "camera-monitor",
     icon: <Icon fontSize="small">camera</Icon>,
     route: "/camera-monitor",

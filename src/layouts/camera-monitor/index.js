@@ -56,7 +56,7 @@ function CameraMonitor() {
                   color="info"
                   title="Device 2 "
                   description="Latest Preview"
-                  date="Insight discovered 2 days ago"
+                  date="Insight discovered 1 days ago"
                   stream="https://player.twitch.tv/?channel=shrimps247&muted=true&parent=ai-system-h40-casourcer.vercel.app"
                 />
               </MDBox>
@@ -67,7 +67,7 @@ function CameraMonitor() {
                   color="info"
                   title="Device 3 "
                   description="Latest Preview"
-                  date="Insight discovered 2 days ago"
+                  date="Insight discovered 4 days ago"
                   stream="https://player.twitch.tv/?channel=shrimps247&muted=true&parent=ai-system-h40-casourcer.vercel.app"
                 />
               </MDBox>
