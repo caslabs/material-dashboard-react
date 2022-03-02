@@ -57,7 +57,15 @@ const routes = [
   },
   {
     type: "collapse",
-    name: "Monitor",
+    name: "Data Annontation",
+    key: "data-annontation",
+    icon: <Icon fontSize="small">image_search</Icon>,
+    route: "/data-annotation",
+    component: <CameraMonitor />,
+  },
+  {
+    type: "collapse",
+    name: "Dashboard",
     key: "dashboard",
     icon: <Icon fontSize="small">dashboard</Icon>,
     route: "/dashboard",
@@ -73,28 +81,12 @@ const routes = [
   },
   {
     type: "collapse",
-    name: "Notifications",
-    key: "notification",
-    icon: <Icon fontSize="small">notifications</Icon>,
-    route: "/notification",
-    component: <Notifications />,
-  },
-  {
-    type: "collapse",
     name: "Devices",
     key: "devices",
     icon: <Icon fontSize="small">memory</Icon>,
     route: "/devices",
     component: <Devices />,
-  },
-  {
-    type: "collapse",
-    name: "Profile",
-    key: "profile",
-    icon: <Icon fontSize="small">person</Icon>,
-    route: "/profile",
-    component: <Profile />,
-  },
+  }
 ];
 
 export default routes;
