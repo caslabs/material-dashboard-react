@@ -52,13 +52,12 @@ function CameraMonitor() {
             </Grid>
             <Grid item xs={12} md={6} lg={4}>
               <MDBox mb={3}>
-              <ReportsBarChart
-                  color="info"
-                  title="Device 2"
-                  description="Latest Preview"
-                  date="Insight discovered 2 days ago"
-                  chart={reportsBarChartData}
-                />
+              <iframe
+    src="https://player.twitch.tv/?channel=xqcow&muted=true&parent=streamernews.example.com"
+    height="300"
+    width="300"
+    allowfullscreen="true">
+</iframe>
               </MDBox>
             </Grid>
             <Grid item xs={12} md={6} lg={4}>
