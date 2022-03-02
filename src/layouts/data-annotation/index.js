@@ -34,6 +34,9 @@ import reportsLineChartData from "layouts/dashboard/data/reportsLineChartData";
 //Experiment - Image Preview
 import React, { useState, useEffect } from 'react'
 
+//Experiment - Image Annotations
+import ReactImageAnnotate from "react-image-annotate";
+
 function DataAnnotation() {
   const { sales, tasks } = reportsLineChartData;
   const [images, setImages] = useState([]);
@@ -44,11 +47,14 @@ function DataAnnotation() {
     const newImageURLs = [];
     images.forEach(image => newImageURLs.push(URL.createObjectURL(image)));
     setImageURLS(newImageURLs)
+    //imageURLS is populated
+
   }, [images])
 
   function onImageChange(e) {
     setImages([...e.target.files]);
   }
+
 
   return (
     <DashboardLayout>
@@ -58,13 +64,30 @@ function DataAnnotation() {
           <Grid container spacing={3}>
             <Grid item xs={12} md={6} lg={4}>
               <MDBox mb={3}>
-                <input type="file" multiple accept="image/*" onChange={onImageChange} />
-                { imageURLs.map(imageSrc => <img width="300px" src={imageSrc} /> )}
+  
+                
               </MDBox>
             </Grid>
           </Grid>
         </MDBox>
       </MDBox>
+
+      <input type="file" multiple accept="image/*" onChange={onImageChange} />
+      {imageURLs.map(imageSrc =>
+        /* <img width="300px" src={imageSrc} /> */
+        <ReactImageAnnotate
+        labelImages
+        regionClsList={["Alpha", "Beta", "Charlie", "Delta"]}
+        regionTagList={["tag1", "tag2", "tag3"]}
+        images={[
+          {
+            src: imageSrc,
+            name: "Image 1",
+            regions: []
+          }
+        ]}
+      />
+      )}
       <Footer />
     </DashboardLayout>
   );
