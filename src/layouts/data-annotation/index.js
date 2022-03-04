@@ -40,12 +40,15 @@ import ReactImageAnnotate from "react-image-annotate";
 function DataAnnotation() {
   const { sales, tasks } = reportsLineChartData;
   const [images, setImages] = useState([]);
-  const [imageURLs, setImageURLS] = useState([]);
+  const [imageURLs, setImageURLS] = useState([                {
+    src: "https://opb-opb-prod.cdn.arcpublishing.com/resizer/EdaeZGhTkhNaO6QK5O2JNHRoQlg=/767x0/smart/cloudfront-us-east-1.images.arcpublishing.com/opb/KXHTPJMIR5GPRFEXFGOK3URQA4.jpg",
+    name: "Device Snapshot",
+    regions: []
+  }]);
 
   useEffect(() => {
     if (images.length < 1) return;
     const newImageURLs = [];
-    images.forEach(image => newImageURLs.push(URL.createObjectURL(image)));
     setImageURLS(newImageURLs)
     //imageURLS is populated
 
@@ -59,23 +62,19 @@ function DataAnnotation() {
   return (
     <DashboardLayout>
       <DashboardNavbar />
-      <MDBox py={3}>
-        <MDBox mt={4.5}>
-          <Grid container spacing={3}>
-            <Grid item xs={12} md={6} lg={4}>
-              <MDBox mb={3}>
-  
-                
-              </MDBox>
-            </Grid>
-          </Grid>
-        </MDBox>
-      </MDBox>
+      <ReactImageAnnotate
+              labelImages
+              regionClsList={["Alpha", "Beta", "Charlie", "Delta"]}
+              regionTagList={["tag1", "tag2", "tag3"]}
+              images={imageURLs}/>
+      {/*<input type="file" multiple accept="image/*" onChange={onImageChange} /> */}
+      {
 
-      <input type="file" multiple accept="image/*" onChange={onImageChange} />
-      {imageURLs.map(imageSrc =>
-        /* <img width="300px" src={imageSrc} /> */
-        <ReactImageAnnotate
+      /*
+        imageURLs.map(imageSrc =>
+        <img width="300px" src={imageSrc} />
+
+                <ReactImageAnnotate
         labelImages
         regionClsList={["Alpha", "Beta", "Charlie", "Delta"]}
         regionTagList={["tag1", "tag2", "tag3"]}
@@ -87,7 +86,8 @@ function DataAnnotation() {
           }
         ]}
       />
-      )}
+      */
+      }
       <Footer />
     </DashboardLayout>
   );

@@ -48,23 +48,7 @@ import Icon from "@mui/material/Icon";
 const routes = [
   {
     type: "collapse",
-    name: "Devices Preview",
-    key: "camera-monitor",
-    icon: <Icon fontSize="small">camera</Icon>,
-    route: "/camera-monitor",
-    component: <CameraMonitor />,
-  },
-  {
-    type: "collapse",
-    name: "Data Annontation",
-    key: "annontation",
-    icon: <Icon fontSize="small">image_search</Icon>,
-    route: "/annontation",
-    component: <DataAnnotation />,
-  },
-  {
-    type: "collapse",
-    name: "Dashboard",
+    name: "Smart Insights",
     key: "dashboard",
     icon: <Icon fontSize="small">dashboard</Icon>,
     route: "/dashboard",
@@ -72,7 +56,23 @@ const routes = [
   },
   {
     type: "collapse",
-    name: "Database",
+    name: "Device Preview",
+    key: "camera-monitor",
+    icon: <Icon fontSize="small">camera</Icon>,
+    route: "/camera-monitor",
+    component: <CameraMonitor />,
+  },
+  {
+    type: "collapse",
+    name: "Device Learning",
+    key: "annontation",
+    icon: <Icon fontSize="small">image_search</Icon>,
+    route: "/annontation",
+    component: <DataAnnotation />,
+  },
+  {
+    type: "collapse",
+    name: "Device Database",
     key: "database",
     icon: <Icon fontSize="small">table_view</Icon>,
     route: "/database",
@@ -80,7 +80,7 @@ const routes = [
   },
   {
     type: "collapse",
-    name: "Devices",
+    name: "Device Status",
     key: "devices",
     icon: <Icon fontSize="small">memory</Icon>,
     route: "/devices",
