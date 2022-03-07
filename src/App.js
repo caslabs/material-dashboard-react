@@ -113,11 +113,10 @@ export default function App() {
   }, [pathname]);
 
   // Hotjar tracking code
-  /*
   useEffect(() => {
     hotjar.initialize(2833340, 6);
   }, []);
-*/
+  
   const getRoutes = (allRoutes) =>
     allRoutes.map((route) => {
       if (route.collapse) {
