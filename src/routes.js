@@ -41,11 +41,20 @@ import Tables from "layouts/tables";
 import CameraMonitor from "layouts/camera-monitor";
 import Devices from "layouts/devices";
 import DataAnnotation from "layouts/data-annotation";
+import Workspace from "layouts/workspace";
 
 // @mui icons
 import Icon from "@mui/material/Icon";
 
 const routes = [
+  {
+    type: "collapse",
+    name: "Workspace",
+    key: "workspace",
+    icon: <Icon fontSize="small">apps</Icon>,
+    route: "/workspace",
+    component: <Workspace />,
+  },
   {
     type: "collapse",
     name: "Smart Insights",
