@@ -182,27 +182,27 @@ function Sidenav({ color, brand, brandName, routes, ...rest }) {
       <MDBox p={2} mt="auto">
         <MDButton
           component="a"
-          href="https://hackfortheocean-casourcer.vercel.app/sign-up/"
+          href="https://www.automaflo.com/sign-up/"
           target="_blank"
           rel="noreferrer"
           variant="gradient"
           color={sidenavColor}
           fullWidth
         >
-          Add New Tab
+          Add New Workspace
         </MDButton>
       </MDBox>
       <MDBox p={2} mt="auto">
         <MDButton
           component="a"
-          href="https://hackfortheocean-casourcer.vercel.app/sign-up/"
+          href="https://www.automaflo.com/sign-up/"
           target="_blank"
           rel="noreferrer"
           variant="gradient"
           color={sidenavColor}
           fullWidth
         >
-          upgrade to pro
+          Schedule A Demo With Us!
         </MDButton>
       </MDBox>
       
