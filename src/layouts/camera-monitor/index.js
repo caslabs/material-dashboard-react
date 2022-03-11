@@ -63,7 +63,7 @@ function CameraMonitor() {
                   title="Device 1 "
                   description="Latest Preview"
                   date="Insight discovered 2 days ago"
-                  stream="https://player.twitch.tv/?channel=shrimps247&muted=true&parent=ai-system-h40-casourcer.vercel.app"
+                  stream="https://player.twitch.tv/?channel=shrimps247&muted=true&parent=workspace.automaflo.com"
                 />
               </MDBox>
             </Grid>
@@ -74,7 +74,7 @@ function CameraMonitor() {
                   title="Device 2 "
                   description="Latest Preview"
                   date="Insight discovered 1 days ago"
-                  stream="https://player.twitch.tv/?channel=marinemammalrescue&muted=true&parent=ai-system-h40-casourcer.vercel.app"
+                  stream="https://player.twitch.tv/?channel=marinemammalrescue&muted=true&parent=workspace.automaflo.com"
                 />
               </MDBox>
             </Grid>
@@ -85,7 +85,7 @@ function CameraMonitor() {
                   title="Device 3 "
                   description="Latest Preview"
                   date="Insight discovered 4 days ago"
-                  stream="https://player.twitch.tv/?channel=chilloutwatermusic&muted=true&parent=ai-system-h40-casourcer.vercel.app"
+                  stream="https://player.twitch.tv/?channel=chilloutwatermusic&muted=true&parent=workspace.automaflo.com"
                 />
               </MDBox>
             </Grid>
