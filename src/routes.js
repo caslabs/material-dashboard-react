@@ -42,6 +42,7 @@ import CameraMonitor from "layouts/camera-monitor";
 import Devices from "layouts/devices";
 import DataAnnotation from "layouts/data-annotation";
 import Workspace from "layouts/workspace";
+import DataMap from "layouts/data-map";
 
 // @mui icons
 import Icon from "@mui/material/Icon";
@@ -54,6 +55,14 @@ const routes = [
     icon: <Icon fontSize="small">apps</Icon>,
     route: "/workspace",
     component: <Workspace />,
+  },
+  {
+    type: "collapse",
+    name: "Explore",
+    key: "data-map",
+    icon: <Icon fontSize="small">public</Icon>,
+    route: "/data-map",
+    component: <DataMap />,
   },
   {
     type: "collapse",
