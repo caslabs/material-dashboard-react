@@ -85,7 +85,7 @@ function CameraMonitor() {
                   title="Device 3 "
                   description="Latest Preview"
                   date="Insight discovered 4 days ago"
-                  stream="https://player.twitch.tv/?channel=chilloutwatermusic&muted=true&parent=workspace.automaflo.com"
+                  stream="https://player.twitch.tv/?channel=germanshrimpz&muted=true&parent=workspace.automaflo.com"
                 />
               </MDBox>
             </Grid>
