@@ -15,14 +15,22 @@ Coded by www.creative-tim.com
 
 // @mui material components
 import Grid from "@mui/material/Grid";
+import Card from "@mui/material/Card";
 
 // Material Dashboard 2 React components
 import MDBox from "components/MDBox";
+import MDTypography from "components/MDTypography";
 
 // Material Dashboard 2 React example components
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 import Footer from "examples/Footer";
+
+import DataTable from "examples/Tables/DataTable";
+
+// Data
+import authorsTableData from "layouts/tables/data/authorsTableData";
+import projectsTableData from "layouts/tables/data/metaData";
 
 //Data MapContainer
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
@@ -85,9 +93,13 @@ function DataMap() {
   const position2 = [21.2840, -157.7189]
   const position3 = [21.2830, -157.7180]
 
+  const { columns, rows } = authorsTableData();
+  const { columns: pColumns, rows: pRows } = projectsTableData();
+
   return (
     <DashboardLayout>
       <DashboardNavbar />
+      <Grid>
       <p >Explore Databases</p>
       <MapContainer center={position} zoom={17} style={{ height: '80vh', width: '100wh' }} scrollWheelZoom={false}>
       <TileLayer
@@ -121,6 +133,35 @@ function DataMap() {
       />
     ))}
   </MapContainer>
+  </Grid>
+  <br></br>
+  <Grid item xs={12}>
+  <Card>
+              <MDBox
+                mx={2}
+                mt={-3}
+                py={3}
+                px={2}
+                variant="gradient"
+                bgColor="info"
+                borderRadius="lg"
+                coloredShadow="info"
+              >
+                <MDTypography variant="h6" color="white">
+                  Meta Database
+                </MDTypography>
+              </MDBox>
+              <MDBox pt={3}>
+                <DataTable
+                  table={{ columns: pColumns, rows: pRows }}
+                  isSorted={false}
+                  entriesPerPage={false}
+                  showTotalEntries={false}
+                  noEndBorder
+                />
+              </MDBox>
+            </Card>
+            </Grid>
       <Footer />
     </DashboardLayout>
   );

@@ -39,7 +39,7 @@ import MDButton from "components/MDButton";
 import BasicLayout from "layouts/authentication/components/BasicLayout";
 
 // Images
-import bgImage from "assets/images/bg-sign-in-basic.jpeg";
+import bgImage from "assets/images/bg-sign-in-basic.jpg";
 
 function Basic() {
   const [rememberMe, setRememberMe] = useState(false);
@@ -103,7 +103,9 @@ function Basic() {
             </MDBox>
             <MDBox mt={4} mb={1}>
               <MDButton variant="gradient" color="info" fullWidth>
+              <a href="https://workspace.automaflo.com/dashboard">
                 sign in
+              </a>
               </MDButton>
             </MDBox>
             <MDBox mt={3} mb={1} textAlign="center">

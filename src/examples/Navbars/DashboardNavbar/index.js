@@ -174,6 +174,19 @@ function DashboardNavbar({ absolute, light, isMini }) {
               >
                 <Icon sx={iconsStyle}>notifications</Icon>
               </IconButton>
+              <IconButton
+                size="small"
+                disableRipple
+                color="inherit"
+                sx={navbarIconButton}
+                aria-controls="notification-menu"
+                aria-haspopup="true"
+                variant="contained"
+                onClick={handleOpenMenu}
+              >
+                <Icon sx={iconsStyle}>account_balance_wallet</Icon>
+                <p>0.0032</p>
+              </IconButton>
               {renderMenu()}
             </MDBox>
           </MDBox>

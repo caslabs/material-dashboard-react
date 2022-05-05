@@ -43,6 +43,8 @@ import Devices from "layouts/devices";
 import DataAnnotation from "layouts/data-annotation";
 import Workspace from "layouts/workspace";
 import DataMap from "layouts/data-map";
+import SignIn from "layouts/authentication/sign-in";
+import SignUp from "layouts/authentication/sign-up";
 
 // @mui icons
 import Icon from "@mui/material/Icon";
@@ -103,6 +105,14 @@ const routes = [
     icon: <Icon fontSize="small">memory</Icon>,
     route: "/devices",
     component: <Devices />,
+  },
+  {
+    type: "collapse",
+    name: "Sign In",
+    key: "sign-in",
+    icon: <Icon fontSize="small">login</Icon>,
+    route: "/authentication/sign-in",
+    component: <SignIn />,
   }
 ];
 
